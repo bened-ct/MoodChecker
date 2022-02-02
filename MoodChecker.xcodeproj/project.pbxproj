@@ -9,23 +9,25 @@
 /* Begin PBXBuildFile section */
 		9050452727AA086F0076F340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452627AA086F0076F340 /* AppDelegate.swift */; };
 		9050452927AA086F0076F340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452827AA086F0076F340 /* SceneDelegate.swift */; };
-		9050452B27AA086F0076F340 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452A27AA086F0076F340 /* ViewController.swift */; };
+		9050452B27AA086F0076F340 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452A27AA086F0076F340 /* StartViewController.swift */; };
 		9050452E27AA086F0076F340 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9050452C27AA086F0076F340 /* Main.storyboard */; };
 		9050453127AA086F0076F340 /* MoodChecker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9050452F27AA086F0076F340 /* MoodChecker.xcdatamodeld */; };
 		9050453327AA08700076F340 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9050453227AA08700076F340 /* Assets.xcassets */; };
 		9050453627AA08700076F340 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9050453427AA08700076F340 /* LaunchScreen.storyboard */; };
+		9050453F27AA25A30076F340 /* MoodCheckViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050453E27AA25A30076F340 /* MoodCheckViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9050452327AA086F0076F340 /* MoodChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9050452627AA086F0076F340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9050452827AA086F0076F340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9050452A27AA086F0076F340 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9050452A27AA086F0076F340 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		9050452D27AA086F0076F340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9050453027AA086F0076F340 /* MoodChecker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MoodChecker.xcdatamodel; sourceTree = "<group>"; };
 		9050453227AA08700076F340 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9050453527AA08700076F340 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9050453727AA08700076F340 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9050453E27AA25A30076F340 /* MoodCheckViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodCheckViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +62,7 @@
 			children = (
 				9050452627AA086F0076F340 /* AppDelegate.swift */,
 				9050452827AA086F0076F340 /* SceneDelegate.swift */,
-				9050452A27AA086F0076F340 /* ViewController.swift */,
+				9050453D27AA24430076F340 /* Controllers */,
 				9050452C27AA086F0076F340 /* Main.storyboard */,
 				9050453227AA08700076F340 /* Assets.xcassets */,
 				9050453427AA08700076F340 /* LaunchScreen.storyboard */,
@@ -68,6 +70,15 @@
 				9050452F27AA086F0076F340 /* MoodChecker.xcdatamodeld */,
 			);
 			path = MoodChecker;
+			sourceTree = "<group>";
+		};
+		9050453D27AA24430076F340 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9050452A27AA086F0076F340 /* StartViewController.swift */,
+				9050453E27AA25A30076F340 /* MoodCheckViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +153,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9050453127AA086F0076F340 /* MoodChecker.xcdatamodeld in Sources */,
-				9050452B27AA086F0076F340 /* ViewController.swift in Sources */,
+				9050452B27AA086F0076F340 /* StartViewController.swift in Sources */,
 				9050452727AA086F0076F340 /* AppDelegate.swift in Sources */,
+				9050453F27AA25A30076F340 /* MoodCheckViewController.swift in Sources */,
 				9050452927AA086F0076F340 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
