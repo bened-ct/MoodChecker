@@ -1,5 +1,5 @@
 //
-//  MoodCheckViewController.swift
+//  GraphViewController.swift
 //  MoodChecker
 //
 //  Created by Benedict Velasco on 2/02/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class MoodCheckViewController: UIViewController {
+class GraphViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
