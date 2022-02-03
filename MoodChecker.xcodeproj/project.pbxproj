@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B98B989150D25B34CB0969F /* Pods_MoodChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC9D0223390C3824782BEE4 /* Pods_MoodChecker.framework */; };
 		9050452727AA086F0076F340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452627AA086F0076F340 /* AppDelegate.swift */; };
 		9050452927AA086F0076F340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452827AA086F0076F340 /* SceneDelegate.swift */; };
 		9050452B27AA086F0076F340 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452A27AA086F0076F340 /* StartViewController.swift */; };
@@ -19,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CC9D0223390C3824782BEE4 /* Pods_MoodChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C9FAFC01B74869A6E0DD81 /* Pods-MoodChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodChecker.debug.xcconfig"; path = "Target Support Files/Pods-MoodChecker/Pods-MoodChecker.debug.xcconfig"; sourceTree = "<group>"; };
+		87A2669D731677C5021CE179 /* Pods-MoodChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodChecker.release.xcconfig"; path = "Target Support Files/Pods-MoodChecker/Pods-MoodChecker.release.xcconfig"; sourceTree = "<group>"; };
 		9050452327AA086F0076F340 /* MoodChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9050452627AA086F0076F340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9050452827AA086F0076F340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,17 +41,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B98B989150D25B34CB0969F /* Pods_MoodChecker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AA6D882987941DBD2CB9CBD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CC9D0223390C3824782BEE4 /* Pods_MoodChecker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		30C8019A42FDCE819092A2E7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84C9FAFC01B74869A6E0DD81 /* Pods-MoodChecker.debug.xcconfig */,
+				87A2669D731677C5021CE179 /* Pods-MoodChecker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9050451A27AA086F0076F340 = {
 			isa = PBXGroup;
 			children = (
 				9050452527AA086F0076F340 /* MoodChecker */,
 				9050452427AA086F0076F340 /* Products */,
+				30C8019A42FDCE819092A2E7 /* Pods */,
+				1AA6D882987941DBD2CB9CBD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +124,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9050453A27AA08700076F340 /* Build configuration list for PBXNativeTarget "MoodChecker" */;
 			buildPhases = (
+				1750AEFFF5107B4DFCC9E213 /* [CP] Check Pods Manifest.lock */,
 				9050451F27AA086F0076F340 /* Sources */,
 				9050452027AA086F0076F340 /* Frameworks */,
 				9050452127AA086F0076F340 /* Resources */,
+				455BCB5F6332B68C7DA9A7F5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -157,6 +184,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1750AEFFF5107B4DFCC9E213 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MoodChecker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		455BCB5F6332B68C7DA9A7F5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoodChecker/Pods-MoodChecker-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MoodChecker/Pods-MoodChecker-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MoodChecker/Pods-MoodChecker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9050451F27AA086F0076F340 /* Sources */ = {
@@ -312,6 +381,7 @@
 		};
 		9050453B27AA08700076F340 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C9FAFC01B74869A6E0DD81 /* Pods-MoodChecker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -340,6 +410,7 @@
 		};
 		9050453C27AA08700076F340 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 87A2669D731677C5021CE179 /* Pods-MoodChecker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
