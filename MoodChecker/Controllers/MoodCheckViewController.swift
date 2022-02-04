@@ -12,7 +12,7 @@ class MoodCheckViewController: UIViewController {
     
     var message = "Select a mood" // message displayed on page that gets changed
     let weekday = Date.getWeekday() // extracts weekday
-    var weekly: [String: Int] = ["Monday": 0, "Tuesday": 0, "Wednesday": 0, "Thursday": 0, "Friday": 0, "Saturday": 0, "Sunday": 0] // array that stores data and gets saved in User Default
+    var weekly: [String: Int] = ["Monday": 0, "Tuesday": 1, "Wednesday": 1, "Thursday": 3, "Friday": 0, "Saturday": 0, "Sunday": 0] // array that stores data and gets saved in User Default
     
     @IBOutlet weak var fineButton: UIButton!
     @IBOutlet weak var mildButton: UIButton!
@@ -27,6 +27,14 @@ class MoodCheckViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         showText()
+        
+        // Assigns string messages to respective buttons
+        fineButton.accessibilityLabel = "Fine"
+        mildButton.accessibilityLabel = "Mild"
+        tiredButton.accessibilityLabel = "Tired"
+        stressButton.accessibilityLabel = "Stress"
+        veryButton.accessibilityLabel = "Very Stressed"
+        extremeButton.accessibilityLabel = "Extremely Stressed"
         
         // Assigns value tags to respective buttons
         fineButton.tag = 0
@@ -54,7 +62,7 @@ class MoodCheckViewController: UIViewController {
     }
 
     @IBAction func moodPressed(_ sender: UIButton) {
-        let titleString = sender.titleLabel?.text
+        let titleString = sender.accessibilityLabel
         
         message = titleString!
         showText() //

@@ -60,26 +60,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-Hz-e6q" userLabel="Fine">
-                                <rect key="frame" x="2" y="285" width="132" height="123"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.15535288156467314" green="0.6022838847805756" blue="0.27904850782144303" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Fine">
-                                    <backgroundConfiguration key="background" image="face.smiling.fill" catalog="system" strokeWidth="0.0"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <action selector="moodPressed:" destination="7UI-t2-SMN" eventType="touchUpInside" id="JAx-kO-80X"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="41G-jr-kOU" userLabel="Mild">
                                 <rect key="frame" x="142" y="285" width="132" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.1821967652" green="0.70635429780000003" blue="0.32726612440000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Mild">
-                                    <backgroundConfiguration key="background" image="face.smiling.fill" catalog="system"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
+                                <color key="tintColor" red="0.57318155431325191" green="0.93470199899999995" blue="0.22851247540514216" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="face.smiling.fill" catalog="system"/>
                                 <connections>
                                     <action selector="moodPressed:" destination="7UI-t2-SMN" eventType="touchUpInside" id="ExX-Np-Irw"/>
                                 </connections>
@@ -87,11 +74,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fa3-9P-4iA" userLabel="Tired">
                                 <rect key="frame" x="282" y="285" width="132" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.96980595459999996" blue="0.29919684439999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Tired">
-                                    <backgroundConfiguration key="background" image="face.smiling.fill" catalog="system"/>
-                                </buttonConfiguration>
+                                <color key="tintColor" red="0.99472051858901978" green="0.97489148360748712" blue="0.25480775185152726" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="face.smiling.fill" catalog="system"/>
                                 <connections>
                                     <action selector="moodPressed:" destination="7UI-t2-SMN" eventType="touchUpInside" id="A6o-H2-UQb"/>
                                 </connections>
@@ -99,11 +84,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qFN-Ij-frO" userLabel="Stress">
                                 <rect key="frame" x="0.0" y="500" width="132" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="1" green="0.63536985030000004" blue="0.11866820340000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Stressed">
-                                    <backgroundConfiguration key="background" image="face.smiling.fill" catalog="system"/>
-                                </buttonConfiguration>
+                                <color key="tintColor" red="0.94839400053024292" green="0.81247278183316707" blue="0.24261460174168317" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="face.smiling.fill" catalog="system"/>
                                 <connections>
                                     <action selector="moodPressed:" destination="7UI-t2-SMN" eventType="touchUpInside" id="SvU-83-WEK"/>
                                 </connections>
@@ -111,11 +94,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bYx-ag-3hd" userLabel="Very Stressed">
                                 <rect key="frame" x="140" y="500" width="132" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.74509803919999995" green="0.3294117647" blue="0.1843137255" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Very Stressed">
-                                    <backgroundConfiguration key="background" image="face.smiling.fill" catalog="system"/>
-                                </buttonConfiguration>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="face.smiling.fill" catalog="system"/>
                                 <connections>
                                     <action selector="moodPressed:" destination="7UI-t2-SMN" eventType="touchUpInside" id="9k5-Vb-6RT"/>
                                 </connections>
@@ -124,12 +105,12 @@
                                 <rect key="frame" x="116" y="774" width="181" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Results"/>
+                                <buttonConfiguration key="configuration" style="filled" title="See Results"/>
                                 <connections>
                                     <segue destination="xsQ-8T-eKU" kind="show" id="xsr-sy-t6c"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R67-qt-Y6n">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R67-qt-Y6n">
                                 <rect key="frame" x="47" y="677" width="318" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="31"/>
@@ -147,14 +128,22 @@
                                 <rect key="frame" x="282" y="500" width="132" height="123"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" label="Extremely Stressed"/>
-                                <color key="tintColor" red="0.91768199210000001" green="0.29067210290000001" blue="0.32713988290000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Extremely Stressed">
-                                    <backgroundConfiguration key="background" image="face.smiling.fill" catalog="system"/>
-                                    <fontDescription key="titleFontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="9"/>
-                                </buttonConfiguration>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                <color key="tintColor" red="0.91768199210000001" green="0.10083366415990518" blue="0.10903926388351498" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="face.smiling.fill" catalog="system"/>
                                 <connections>
                                     <action selector="moodPressed:" destination="7UI-t2-SMN" eventType="touchUpInside" id="YnS-aV-4Zv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ph2-Hz-e6q" userLabel="Fine">
+                                <rect key="frame" x="2" y="285" width="132" height="123"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.010808393500884139" green="1" blue="0.20000297676015222" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" backgroundImage="face.smiling.fill" catalog="system"/>
+                                <connections>
+                                    <action selector="moodPressed:" destination="7UI-t2-SMN" eventType="touchUpInside" id="JAx-kO-80X"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -174,7 +163,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BsH-m6-euN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2091" y="-276"/>
+            <point key="canvasLocation" x="2089.8550724637685" y="-276.5625"/>
         </scene>
         <!--Graph View Controller-->
         <scene sceneID="PVj-Q6-ZL6">
@@ -183,15 +172,6 @@
                     <view key="view" contentMode="scaleToFill" id="phs-b2-fHz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Weekly Mood Overview" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fls-2t-AFO">
-                                <rect key="frame" x="44" y="129" width="327" height="42"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="dag-z9-5Jt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -227,7 +207,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="7qQ-d0-BYr"/>
+        <segue reference="xsr-sy-t6c"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="face.smiling.fill" catalog="system" width="128" height="121"/>
@@ -236,6 +216,9 @@
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

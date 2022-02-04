@@ -6,6 +6,6 @@ target 'MoodChecker' do
   use_frameworks!
 
   # Pods for MoodChecker
-pod 'Charts'
+  pod 'AAInfographics', :git => 'https://github.com/AAChartModel/AAChartKit-Swift.git'
 
 end
