@@ -11,7 +11,7 @@
         <!--Mood Check View Controller-->
         <scene sceneID="cIY-1y-eCW">
             <objects>
-                <viewController storyboardIdentifier="secondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DqD-dt-V5W" customClass="MoodCheckViewController" customModule="MoodChecker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MoodCheckViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DqD-dt-V5W" customClass="MoodCheckViewController" customModule="MoodChecker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IbV-yf-eti">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -57,16 +57,6 @@
                                     <action selector="moodPressed:" destination="DqD-dt-V5W" eventType="touchUpInside" id="fBl-5C-qyI"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bxe-0O-yAD">
-                                <rect key="frame" x="116" y="774" width="181" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="See Results"/>
-                                <connections>
-                                    <action selector="resultPressed:" destination="DqD-dt-V5W" eventType="touchUpInside" id="JxY-lR-RYy"/>
-                                    <action selector="resultsPressed:" destination="DqD-dt-V5W" eventType="touchUpInside" id="Iuz-KD-7Vf"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mood" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-EJ-gbW">
                                 <rect key="frame" x="47" y="677" width="318" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -101,6 +91,15 @@
                                 <state key="normal" backgroundImage="face.smiling.fill" catalog="system"/>
                                 <connections>
                                     <action selector="moodPressed:" destination="DqD-dt-V5W" eventType="touchUpInside" id="6SI-0F-SgF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kAJ-Sq-HtT">
+                                <rect key="frame" x="137" y="750" width="137" height="57"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="RESULTS"/>
+                                <connections>
+                                    <action selector="resultPressed:" destination="DqD-dt-V5W" eventType="touchUpInside" id="DQj-cO-d8y"/>
                                 </connections>
                             </button>
                         </subviews>

@@ -50,6 +50,29 @@ class MoodCheckViewController: UIViewController, StoryboardInitializable {
         
     }
     
+    @IBAction func moodPressed(_ sender: UIButton) {
+        // Any mood buttons are pressed..
+        
+        // The message label will display its Title
+        let titleString = sender.accessibilityLabel
+        message = titleString!
+        showText()
+        
+        // And its respective tag is saved by calling the storeMood() method
+        let data: Int! = sender.tag
+        storeMood(value: data)
+        
+    }
+    
+    
+    @IBAction func resultPressed(_ sender: Any) {
+        
+        let graphView = GraphViewController.storyboardInstantiate()
+        
+        self.present(graphView, animated: true, completion: nil)
+        
+    }
+    
     // Changes the text based on button pressed
     func showText(){
         
@@ -96,29 +119,6 @@ class MoodCheckViewController: UIViewController, StoryboardInitializable {
             
             print("Data saved in new array")
         }
-    }
-    
-
-    @IBAction func moodPressed(_ sender: UIButton) {
-        // Any mood buttons are pressed..
-        
-        // The message label will display its Title
-        let titleString = sender.accessibilityLabel
-        message = titleString!
-        showText() 
-        
-        // And its respective tag is saved by calling the storeMood() method
-        let data: Int! = sender.tag
-        storeMood(value: data)
-        
-    }
-    
-    @IBAction func resultPressed(_ sender: Any) {
-        
-        let graphView = GraphViewController.storyboardInstantiate()
-        
-        navigationController?.pushViewController(graphView, animated: true)
-        
     }
     
 }

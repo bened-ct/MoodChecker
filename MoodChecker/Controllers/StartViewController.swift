@@ -18,20 +18,14 @@ class StartViewController: UIViewController, StoryboardInitializable {
     
     @IBAction func startPressed(_ sender: Any) {
         
-//        let moodCheck = MoodCheckViewController.storyboardInstantiate()
-//        navigationController?.pushViewController(moodCheck, animated: true)
-        
-        let second = main.instantiateViewController(withIdentifier: "secondVC")
+        let second = MoodCheckViewController.storyboardInstantiate()
         
         self.present(second, animated: true, completion: nil)
     }
     
     @IBAction func resultPressed(_ sender: Any) {
         
-//        let graphView = GraphViewController.storyboardInstantiate()
-//        navigationController?.pushViewController(graphView, animated: true)
-        
-        let third = main.instantiateViewController(withIdentifier: "thirdVC")
+        let third = GraphViewController.storyboardInstantiate()
         
         self.present(third, animated: true, completion: nil)
         
