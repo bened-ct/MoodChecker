@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8B98B989150D25B34CB0969F /* Pods_MoodChecker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CC9D0223390C3824782BEE4 /* Pods_MoodChecker.framework */; };
+		901F60A4282BBE4B00A90A35 /* MoodCheckViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901F60A3282BBE4B00A90A35 /* MoodCheckViewController.storyboard */; };
+		901F60A6282BC4BA00A90A35 /* GraphViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 901F60A5282BC4BA00A90A35 /* GraphViewController.storyboard */; };
+		901F60AA282BD9D800A90A35 /* StoryboardInitializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901F60A9282BD9D800A90A35 /* StoryboardInitializable.swift */; };
 		9050452727AA086F0076F340 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452627AA086F0076F340 /* AppDelegate.swift */; };
 		9050452927AA086F0076F340 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452827AA086F0076F340 /* SceneDelegate.swift */; };
 		9050452B27AA086F0076F340 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9050452A27AA086F0076F340 /* StartViewController.swift */; };
@@ -25,6 +28,9 @@
 		0CC9D0223390C3824782BEE4 /* Pods_MoodChecker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MoodChecker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C9FAFC01B74869A6E0DD81 /* Pods-MoodChecker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodChecker.debug.xcconfig"; path = "Target Support Files/Pods-MoodChecker/Pods-MoodChecker.debug.xcconfig"; sourceTree = "<group>"; };
 		87A2669D731677C5021CE179 /* Pods-MoodChecker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MoodChecker.release.xcconfig"; path = "Target Support Files/Pods-MoodChecker/Pods-MoodChecker.release.xcconfig"; sourceTree = "<group>"; };
+		901F60A3282BBE4B00A90A35 /* MoodCheckViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MoodCheckViewController.storyboard; sourceTree = "<group>"; };
+		901F60A5282BC4BA00A90A35 /* GraphViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GraphViewController.storyboard; sourceTree = "<group>"; };
+		901F60A9282BD9D800A90A35 /* StoryboardInitializable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitializable.swift; sourceTree = "<group>"; };
 		9050452327AA086F0076F340 /* MoodChecker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MoodChecker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9050452627AA086F0076F340 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9050452827AA086F0076F340 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -119,6 +125,7 @@
 				9050452A27AA086F0076F340 /* StartViewController.swift */,
 				9076C2FA27AA47C5006EFB44 /* MoodCheckViewController.swift */,
 				9076C2FC27AA47E7006EFB44 /* GraphViewController.swift */,
+				901F60A9282BD9D800A90A35 /* StoryboardInitializable.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -127,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				9050452C27AA086F0076F340 /* Main.storyboard */,
+				901F60A3282BBE4B00A90A35 /* MoodCheckViewController.storyboard */,
+				901F60A5282BC4BA00A90A35 /* GraphViewController.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,7 +202,9 @@
 			files = (
 				9050453627AA08700076F340 /* LaunchScreen.storyboard in Resources */,
 				9050453327AA08700076F340 /* Assets.xcassets in Resources */,
+				901F60A6282BC4BA00A90A35 /* GraphViewController.storyboard in Resources */,
 				9050452E27AA086F0076F340 /* Main.storyboard in Resources */,
+				901F60A4282BBE4B00A90A35 /* MoodCheckViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +262,7 @@
 				9050452727AA086F0076F340 /* AppDelegate.swift in Sources */,
 				90A754A727B4A38200F9F1D9 /* Mood.swift in Sources */,
 				9076C2FD27AA47E7006EFB44 /* GraphViewController.swift in Sources */,
+				901F60AA282BD9D800A90A35 /* StoryboardInitializable.swift in Sources */,
 				9076C2FB27AA47C5006EFB44 /* MoodCheckViewController.swift in Sources */,
 				9050452927AA086F0076F340 /* SceneDelegate.swift in Sources */,
 				907FB04B27B5D256006AC19F /* userMood.swift in Sources */,

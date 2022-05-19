@@ -8,7 +8,7 @@
 import UIKit
 import AAInfographics
 
-class GraphViewController: UIViewController {
+class GraphViewController: UIViewController, StoryboardInitializable {
     
     let weekData = UserDefaults.standard.object(forKey: "moodKey") as? [String: Int] ?? [:]
     //let weekData = userMoods.shared.users
@@ -21,13 +21,15 @@ class GraphViewController: UIViewController {
         let chartViewHeight = self.view.frame.size.height
         let aaChartView = AAChartView()
 
-        aaChartView.frame = CGRect(x:0, y:0, width:chartViewWidth, height:chartViewHeight)
+        //aaChartView.frame = CGRect(x:0, y:0, width:chartViewWidth, height:chartViewHeight)
+        aaChartView.frame = CGRect(x:0, y:0, width:chartViewWidth, height:800)
+        
         // set the content height of aachartView
         // aaChartView?.contentHeight = self.view.frame.size.height
         self.view.addSubview(aaChartView)
 
         let aaChartModel = AAChartModel()
-                    .yAxisLabelsEnabled(false)
+                    .yAxisLabelsEnabled(true)
                     .yAxisMax(6)
                     .chartType(.line)   //Can be any of the chart types listed under `AAChartType`.
                     .animationType(.bounce)

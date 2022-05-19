@@ -6,14 +6,14 @@
 //
 
 import UIKit
-import Foundation
 
-class MoodCheckViewController: UIViewController {
+class MoodCheckViewController: UIViewController, StoryboardInitializable {
     
-    var message = "Select a mood"
     var moodCall = userMood()
-    let defaults = UserDefaults.standard
     var recArray = [String: Int]()
+    var message = "Select a mood"
+    
+    let defaults = UserDefaults.standard
 
     @IBOutlet weak var fineButton: UIButton!
     @IBOutlet weak var mildButton: UIButton!
@@ -52,6 +52,7 @@ class MoodCheckViewController: UIViewController {
     
     // Changes the text based on button pressed
     func showText(){
+        
         moodDisplay.text = message
     }
     
@@ -68,9 +69,21 @@ class MoodCheckViewController: UIViewController {
         
         //Check if there is already data saved and save to that array instead
         if UserDefaults.standard.object(forKey: "moodKey") != nil {
+            
             print("Data saved in old array")
+            
+            let fileName = Bundle.main.bundleIdentifier!
+            let library = FileManager.default.urls(for: .libraryDirectory, in: .userDomainMask).first!
+            let preferences = library.appendingPathComponent("Preferences")
+            let userDefaultsPlistURL = preferences.appendingPathComponent(fileName).appendingPathExtension("plist")
+            
+            print("Library directory:", userDefaultsPlistURL.path)
+            print("Preferences directory:", userDefaultsPlistURL.path)
+            print("UserDefaults plist file:", userDefaultsPlistURL.path)
+            
             recArray[weekday] = value
             defaults.set(recArray, forKey: "moodKey")
+            
         } else {
             // else create a new dictionary array and populate
             let newMood = Mood()
@@ -78,7 +91,9 @@ class MoodCheckViewController: UIViewController {
             newMood.mood = value
             
             let saveData = moodCall.addMood(day: newMood.date!, mood: newMood.mood!)
-            defaults.set(saveData, forKey: "moodKey")
+            
+            defaults.set(saveData, forKey: "moodKey") //name new array moodKey
+            
             print("Data saved in new array")
         }
     }
@@ -90,12 +105,21 @@ class MoodCheckViewController: UIViewController {
         // The message label will display its Title
         let titleString = sender.accessibilityLabel
         message = titleString!
-        showText() //
+        showText() 
         
         // And its respective tag is saved by calling the storeMood() method
         let data: Int! = sender.tag
         storeMood(value: data)
         
     }
+    
+    @IBAction func resultPressed(_ sender: Any) {
+        
+        let graphView = GraphViewController.storyboardInstantiate()
+        
+        navigationController?.pushViewController(graphView, animated: true)
+        
+    }
+    
 }
 
